@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('img/bkg.jpg')center/cover no-repeat;
+}
+
+.images {
+  flex: 0 0 80%;
+  min-height: 70vh;
+  background: url('img/slide-1.jpeg')center/cover no-repeat;
+  position: relative;
+  border: 1px solid #000;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(172, 172, 172);
+  outline: none;
+  border: 1px solid #000;
+  font-size: 1.5rem;
+  padding: 0 .7rem;
+  opacity: .7;
+}
+
+.btn:hover {
+  opacity: 1;
+  transition: .7s;
+  cursor: pointer;
+}
+
+
+.prevBtn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* The second number is for the vertical adjustement */
+  transform: translate(0%, -50%);
+}
+
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  /* The second number is for the vertical adjustement */
+  transform: translate(0%, -50%);
+}
